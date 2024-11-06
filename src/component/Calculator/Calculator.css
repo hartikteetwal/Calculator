@@ -1,0 +1,111 @@
+.calculator{
+    background: rgba(0,0,0,0.05) url(https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cover{
+    background-color: rgba(222, 222, 222,0.5);
+    min-width: 50%;
+    box-shadow: 1px 57px 12px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.cover .display{
+    width: 100%;
+}
+.cover .display input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 20px 10px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: #eee;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.5);
+ }
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-top: 10px ;
+}
+ .btn{
+    padding: 15px 0;
+    font-size: 25px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 0.5s;
+ }
+ .equal{
+    background-color: rgb(250, 165, 60);
+    color: #fff;
+    font-size: 25px;
+}
+.equal:hover{
+    background-color: rgb(226, 146, 48);
+ }
+ .op{
+    background-color: rgb(9, 155, 143);
+    color: #fff;
+    font-size: 25px;
+}
+.op:hover{
+     background-color: rgb(8, 127, 117);
+ }
+ .clear{
+    background-color: rgb(233, 60, 60);
+    color: #fff;
+}
+.clear:hover{
+    background-color: rgb(207, 53, 53);
+ }
+
+ @media (max-width:500px) {
+    .cover{
+        min-height: 90vh;
+        display: grid;
+        grid-template-rows: 1fr 8fr;
+    }
+
+    .cover .display input{
+        font-size: 35px;
+        padding: 15px;
+    }
+
+    /* .btn{
+        font-size: 20px;
+    }
+    .btna{
+        font-size: 20px;
+    } */
+    .bracket{
+        gap: 2px;
+    }
+ }
+
+ .bracket{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 0;
+    box-shadow: none;
+}
+.bracket .btna{
+    height: 100;
+    padding: 15px 0;
+    font-size: 25px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.5);
+}
