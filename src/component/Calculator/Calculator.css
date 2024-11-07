@@ -45,6 +45,10 @@
     box-shadow: 1px 1px 12px rgba(0,0,0,0.5);
     cursor: pointer;
     transition: 0.5s;
+    background: #eee;
+ }
+.btn:hover{
+    background: #d0d0d0;
  }
  .equal{
     background-color: rgb(250, 165, 60);
