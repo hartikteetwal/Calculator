@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Outfit", serif;
 }
+body{
+  min-height: 100vh;
+}
 .container{
   padding-left: 10%;
   padding-right: 10%;
